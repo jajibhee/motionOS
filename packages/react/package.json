@@ -1,0 +1,46 @@
+{
+  "name": "@motionos/react",
+  "version": "0.0.1",
+  "description": "React bindings for MotionOS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/motionos/motionos"
+  },
+  "bugs": {
+    "url": "https://github.com/motionos/motionos/issues"
+  },
+  "homepage": "https://github.com/motionos/motionos#readme",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.jsx --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.jsx --format cjs,esm --dts --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "@motionos/core": "workspace:*"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "keywords": ["animation", "motion", "react", "flip"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "prepublishOnly": "pnpm run build"
+}

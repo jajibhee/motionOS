@@ -1,0 +1,39 @@
+{
+  "name": "@motionos/core",
+  "version": "0.0.1",
+  "description": "Framework-agnostic performance-first animation engine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/motionos/motionos"
+  },
+  "bugs": {
+    "url": "https://github.com/motionos/motionos/issues"
+  },
+  "homepage": "https://github.com/motionos/motionos#readme",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.js --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.js --format cjs,esm --dts --watch"
+  },
+  "keywords": ["animation", "motion", "flip", "performance"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "prepublishOnly": "pnpm run build",
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}

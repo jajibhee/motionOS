@@ -1,0 +1,53 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Introduction" />
+
+# MotionOS Animation Library
+
+Use the **sidebar (left)** to pick an animation. Each story runs that animation and shows a live preview.
+
+Switch to the **Docs** tab below the canvas to see the **code** and how to use it in your app.
+
+## Quick usage
+
+```jsx
+import { MotionProvider, Motion } from "@motionos/react";
+
+function App() {
+  return (
+    <MotionProvider>
+      <Motion animation="fadeInUp">
+        <div>Your content</div>
+      </Motion>
+    </MotionProvider>
+  );
+}
+```
+
+## With spring
+
+```jsx
+<Motion animation="bounceInUp" spring springConfig="bouncy">
+  <div>Bouncy entrance</div>
+</Motion>
+```
+
+## Sections (scroll-triggered)
+
+```jsx
+<MotionSection animation="fadeInUp">
+  <h2>Animates when in viewport</h2>
+</MotionSection>
+```
+
+## Page transitions
+
+```jsx
+<AnimatePresence mode="wait">
+  <MotionPage key={route} animation="pageFade">
+    {pageContent}
+  </MotionPage>
+</AnimatePresence>
+```
+
+Browse **Animations** in the sidebar to see every preset and its code.

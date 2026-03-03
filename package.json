@@ -1,0 +1,17 @@
+{
+  "name": "motionos",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Performance-first motion engine for data-heavy React applications",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter demo dev",
+    "clean": "pnpm -r exec rm -rf dist node_modules 2>/dev/null; rm -rf node_modules"
+  },
+  "keywords": ["animation", "motion", "react", "flip", "performance"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@9.14.2"
+}
