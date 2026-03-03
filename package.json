@@ -6,7 +6,9 @@
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm --filter demo dev",
-    "clean": "pnpm -r exec rm -rf dist node_modules 2>/dev/null; rm -rf node_modules"
+    "clean": "pnpm -r exec rm -rf dist node_modules 2>/dev/null; rm -rf node_modules",
+    "prepublish:packages": "pnpm build",
+    "publish:packages": "pnpm --filter @motionos/core publish && pnpm --filter @motionos/react publish"
   },
   "keywords": ["animation", "motion", "react", "flip", "performance"],
   "license": "MIT",
