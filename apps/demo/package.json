@@ -11,7 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@motionos/react": "workspace:*",
+    "motionos-react": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "@motionos/core",
+  "name": "motionos-core",
   "version": "0.0.1",
   "description": "Framework-agnostic performance-first animation engine",
   "repository": {

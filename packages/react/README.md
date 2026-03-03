@@ -1,14 +1,14 @@
-# @motionos/react
+# motionos-react
 
 React components and hooks for the MotionOS animation library.
 
 ## Install
 
 ```bash
-npm install @motionos/core @motionos/react
+npm install motionos-core motionos-react
 ```
 
-You need both `@motionos/core` and `@motionos/react`.
+You need both `motionos-core` and `motionos-react`.
 
 ## What to use
 
@@ -19,12 +19,12 @@ You need both `@motionos/core` and `@motionos/react`.
 | Animate when section scrolls into view | `<MotionSection animation="fadeInUp">` |
 | Page / route transitions | `<AnimatePresence>` + `<MotionPage key={route}">` |
 | Bouncy / spring animation | `<Motion animation="bounceIn" spring />` |
-| List of preset names | `import { presets } from "@motionos/react"` |
+| List of preset names | `import { presets } from "motionos-react"` |
 
 ## Quick start
 
 ```jsx
-import { MotionProvider, Motion } from "@motionos/react";
+import { MotionProvider, Motion } from "motionos-react";
 
 function App() {
   return (

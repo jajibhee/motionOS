@@ -1,5 +1,5 @@
 {
-  "name": "@motionos/react",
+  "name": "motionos-react",
   "version": "0.0.1",
   "description": "React bindings for MotionOS",
   "repository": {
@@ -30,7 +30,7 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@motionos/core": "workspace:*"
+    "motionos-core": "workspace:*"
   },
   "devDependencies": {
     "react": "^18.3.1",

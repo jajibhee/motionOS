@@ -1,5 +1,5 @@
 import React from "react";
-import { MotionProvider } from "@motionos/react";
+import { MotionProvider } from "motionos-react";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {

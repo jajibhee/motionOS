@@ -10,7 +10,7 @@ importers:
 
   apps/demo:
     dependencies:
-      '@motionos/react':
+      motionos-react:
         specifier: workspace:*
         version: link:../../packages/react
       react:
@@ -53,7 +53,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@motionos/core':
+      motionos-core:
         specifier: workspace:*
         version: link:../core
     devDependencies:

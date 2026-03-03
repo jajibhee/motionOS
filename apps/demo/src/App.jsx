@@ -7,7 +7,7 @@ import {
   MotionPage,
   AnimatePresence,
   presets,
-} from "@motionos/react";
+} from "motionos-react";
 
 const presetNames = [
   "fadeIn", "fadeInUp", "fadeInLeft", "fadeInUpBig", "fadeInTopLeft",

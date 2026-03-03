@@ -1,4 +1,4 @@
-import { MotionSection } from "@motionos/react";
+import { MotionSection } from "motionos-react";
 
 export default {
   title: "MotionSection",

@@ -3,7 +3,7 @@
  */
 
 import { createContext, useContext, useRef, useLayoutEffect } from "react";
-import { createEngine } from "@motionos/core";
+import { createEngine } from "motionos-core";
 
 const MotionContext = createContext(null);
 

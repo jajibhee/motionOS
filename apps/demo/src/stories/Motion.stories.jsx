@@ -1,5 +1,4 @@
-import { Motion } from "@motionos/react";
-import { presets } from "@motionos/react";
+import { Motion, presets } from "motionos-react";
 
 const presetNames = Object.keys(presets).filter(
   (k) => !["fade", "fadeUp", "fadeDown", "slideLeft", "slideRight", "scale", "shake"].includes(k)

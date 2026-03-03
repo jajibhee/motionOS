@@ -4,7 +4,7 @@ Animation library for React: presets, spring physics, AnimatePresence, and scrol
 
 ## How people know what to use (npm)
 
-When someone finds **@motionos/react** on npm they see:
+When someone finds **motionos-react** on npm they see:
 
 1. **Package README** — Each published package has its own README (see `packages/react/README.md`) with install, “what to use” table, quick start, and API. That’s what appears on the npm package page.
 2. **Repository** — `homepage` and `repository` in package.json point here, so they can open the full README and run the demo/Storybook.
@@ -13,13 +13,13 @@ When someone finds **@motionos/react** on npm they see:
 ## Install
 
 ```bash
-pnpm add @motionos/core @motionos/react
+pnpm add motionos-core motionos-react
 ```
 
 ## Usage
 
 ```jsx
-import { MotionProvider, Motion, MotionText, MotionSection, MotionPage, AnimatePresence, presets } from "@motionos/react";
+import { MotionProvider, Motion, MotionText, MotionSection, MotionPage, AnimatePresence, presets } from "motionos-react";
 
 function App() {
   return (
@@ -67,7 +67,7 @@ Naming aligned with **Animate.css** where possible. Includes:
 - **Attention:** pulse, shakeX, shakeY, headShake, swing, tada, wobble, jello, heartBeat, flash, rubberBand
 - **Page:** pageFade, pageSlide, pageScale
 
-Use `presets` from `@motionos/react` or pass the preset name to `animation`.
+Use `presets` from `motionos-react` or pass the preset name to `animation`.
 
 ## Spring
 

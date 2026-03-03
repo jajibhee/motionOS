@@ -1,5 +1,5 @@
 /**
- * @motionos/core
+ * motionos-core
  * Framework-agnostic performance-first animation engine.
  * Zero external dependencies.
  */

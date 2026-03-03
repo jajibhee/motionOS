@@ -1,5 +1,5 @@
 /**
- * @motionos/react
+ * motionos-react
  * Animation library: presets, AnimatePresence, MotionSection, MotionPage, spring
  */
 

@@ -1,4 +1,4 @@
-import { Motion } from "@motionos/react";
+import { Motion } from "motionos-react";
 
 /**
  * Each story shows one animation. Use the **Docs** tab (below) to see the code.
@@ -20,7 +20,7 @@ function makeStory(animation, description) {
     parameters: {
       docs: {
         source: {
-          code: `import { Motion } from "@motionos/react";
+          code: `import { Motion } from "motionos-react";
 
 <Motion animation="${animation}">
   <div>Your content</div>
